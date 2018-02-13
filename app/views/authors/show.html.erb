@@ -1,5 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<% title @author.name %>
+
 <h1><%= @author.name %></h1>
 <p>Posts:</p>
 <% @author.posts.each do |post| %>
-  <div><%= post.title %></div>
+  <div><%= post.title %> - <%=last_updated post%></div>
 <% end %>
+</body>
+</html>
