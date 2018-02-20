@@ -1,6 +1,8 @@
-
+<%= form_for(@post) do |f| %>
   <% title @post.title %>
 
 <h1>My Post<%= @post.title %></h1>
-<p>My post desc<%= last_updated @post %></p>
+<p>My edit<%= f.text_area :description %><br></p>
+<p>My post description<%= last_updated @post %></p>
 <p><%= @post.description %></p>
+<% end %>
