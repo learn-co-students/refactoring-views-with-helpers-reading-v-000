@@ -12,12 +12,13 @@ class PostsController < ApplicationController
 	end
 
 	def create
-	  @post = Post.new(params)
+	  @post = Post.new(post_params)
 	  @post.save
 	  redirect_to post_path(@post)
 	end
 
 	def update
+		
 	  @post = Post.find(params[:id])
 	  @post.update(params.require(:post))
 	  redirect_to post_path(@post)
@@ -26,4 +27,15 @@ class PostsController < ApplicationController
 	def edit
 	  @post = Post.find(params[:id])
 	end
+
+	def destroy
+		@post = Post.find(params[:id])
+		@post.destroy
+		flash[:notice] = "Post deleted"
+		redirect_to posts_path
+	end
+
+	def post_params
+		params.require(:post).permit(:title, :description)
+	end 
 end
