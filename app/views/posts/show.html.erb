@@ -1,2 +1,8 @@
+<%#below utilizes our application helper to set @post.title to the title variabel which is used in the application.html.erb form in the layout directory%>
+<% title @post.title %>
+
 <h1><%= @post.title %></h1>
+<%#use our helper below%>
+<p><%= last_updated @post %></p>
+
 <p><%= @post.description %></p>
