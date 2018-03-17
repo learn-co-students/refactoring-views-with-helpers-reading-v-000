@@ -43,3 +43,16 @@ describe "post" do
     expect(@post.post_status).to eq(true)
   end
 end
+
+#Implemented my own test below
+describe 'posts index page' do
+  before do
+    @post = Post.create(title: "My Post", description: "My post desc")
+  end
+
+  it "has last_updated method implemented" do
+    visit "/posts"
+    expect(page).to have_content("#{@post.updated_at.strftime("Last updated %A, %b %e, at %l:%M %p")}")
+  end
+
+end
