@@ -11,5 +11,8 @@ require 'rails_helper'
 #   end
 # end
 RSpec.describe AuthorsHelper, type: :helper do
-  pending "add some examples to (or delete) #{__FILE__}"
+  # pending "add some examples to (or delete) #{__FILE__}"
+  it "capitalizes all characters in the author's bio and displays the bio" do
+    expect(bio_info(Author.create(bio: "Born in Bulgaria"))).to eq("BORN IN BULGARIA")
+  end
 end

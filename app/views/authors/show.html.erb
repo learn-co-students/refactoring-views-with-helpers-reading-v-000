@@ -1,5 +1,10 @@
-<h1><%= @author.name %></h1>
+
+<% @authors.each do |author|%>
+<%= author.name %>
+<%= bio_info author %>
+
 <p>Posts:</p>
-<% @author.posts.each do |post| %>
-  <div><%= post.title %></div>
+<% author.posts.each do |post| %>
+<div><%= post.title %></div>
+<% end %>
 <% end %>
