@@ -26,3 +26,23 @@
   [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "authors" ("name", "genre", "bio", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Hal Fields"], ["genre", "genre1"], ["bio", "This is a bio about Hal Fields"], ["created_at", "2018-04-27 18:49:01.980231"], ["updated_at", "2018-04-27 18:49:01.980231"]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "authors" ("name", "genre", "bio", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Joe Blow"], ["genre", "genre1"], ["bio", "This is a bio about Joe Blow"], ["created_at", "2018-04-27 18:49:01.990677"], ["updated_at", "2018-04-27 18:49:01.990677"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "authors" ("name", "genre", "bio", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Hal Fields"], ["genre", "genre1"], ["bio", "This is a bio about Hal Fields"], ["created_at", "2018-04-27 18:50:11.929081"], ["updated_at", "2018-04-27 18:50:11.929081"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "authors" ("name", "genre", "bio", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Joe Blow"], ["genre", "genre1"], ["bio", "This is a bio about Joe Blow"], ["created_at", "2018-04-27 18:50:11.935321"], ["updated_at", "2018-04-27 18:50:11.935321"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Title One"], ["description", "Description One"], ["author_id", 1], ["created_at", "2018-04-27 18:50:11.954992"], ["updated_at", "2018-04-27 18:50:11.954992"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Title Two"], ["description", "Description Two"], ["author_id", 2], ["created_at", "2018-04-27 18:50:11.959250"], ["updated_at", "2018-04-27 18:50:11.959250"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
