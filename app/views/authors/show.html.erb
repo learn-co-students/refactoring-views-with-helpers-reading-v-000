@@ -2,4 +2,5 @@
 <p>Posts:</p>
 <% @author.posts.each do |post| %>
   <div><%= post.title %></div>
+<p><%= last_updated post %></p>
 <% end %>
