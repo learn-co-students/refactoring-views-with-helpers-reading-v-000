@@ -1,0 +1,9 @@
+<%= form_for(@author) do |f| %>
+  <label>Author Name:</label><br>
+  <%= f.text_field :name %><br>
+
+  <label>Author Genre</label><br>
+  <%= f.text_field :genre %><br>
+
+  <%= f.submit %>
+<% end %>
