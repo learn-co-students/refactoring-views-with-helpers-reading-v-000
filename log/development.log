@@ -24,3 +24,588 @@
   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
   [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "Testing"], ["description", "testing"], ["created_at", "2016-01-26 15:06:03.106369"], ["updated_at", "2016-01-26 15:06:03.106369"]]
   [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for 24.186.246.85 at 2018-06-18 15:55:37 +0000
+Cannot render console from 24.186.246.85! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (2.8ms)
+Completed 200 OK in 26ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/show" for 24.186.246.85 at 2018-06-18 15:56:08 +0000
+Cannot render console from 24.186.246.85! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 92ms (ActiveRecord: 0.6ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=show):
+  app/controllers/posts_controller.rb:7:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (47.5ms)
+
+
+Started GET "/posts/new" for 24.186.246.85 at 2018-06-18 15:57:38 +0000
+Cannot render console from 24.186.246.85! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (24.5ms)
+Completed 200 OK in 1056ms (Views: 1050.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/authors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 24.186.246.85 at 2018-06-18 15:57:39 +0000
+Cannot render console from 24.186.246.85! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 24.186.246.85 at 2018-06-18 15:57:39 +0000
+Cannot render console from 24.186.246.85! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 24.186.246.85 at 2018-06-18 15:57:39 +0000
+Cannot render console from 24.186.246.85! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 24.186.246.85 at 2018-06-18 15:57:39 +0000
+Cannot render console from 24.186.246.85! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 24.186.246.85 at 2018-06-18 15:57:39 +0000
+Cannot render console from 24.186.246.85! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/authors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 24.186.246.85 at 2018-06-18 15:57:39 +0000
+Cannot render console from 24.186.246.85! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 24.186.246.85 at 2018-06-18 15:57:39 +0000
+Cannot render console from 24.186.246.85! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/posts" for 24.186.246.85 at 2018-06-18 15:58:00 +0000
+Cannot render console from 24.186.246.85! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3BTXrITkkYFGOajSL0aeDvQG0VKTlJfLtdXADbYwf97EbKhkNPsu0F7mgcsWIoqsvMerNcYrd/JeNQIlujcIMg==", "post"=>{"title"=>"New Post", "description"=>"New Post Description\r\n"}, "commit"=>"Create Post"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+ActiveRecord::UnknownAttributeError (unknown attribute 'utf8' for Post.):
+  app/controllers/posts_controller.rb:15:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (45.0ms)
+
+
+Started POST "/posts" for 24.186.246.85 at 2018-06-18 15:58:53 +0000
+Cannot render console from 24.186.246.85! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3BTXrITkkYFGOajSL0aeDvQG0VKTlJfLtdXADbYwf97EbKhkNPsu0F7mgcsWIoqsvMerNcYrd/JeNQIlujcIMg==", "post"=>{"title"=>"New Post", "description"=>"New Post Description\r\n"}, "commit"=>"Create Post"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+RuntimeError ({"utf8"=>"✓", "authenticity_token"=>"3BTXrITkkYFGOajSL0aeDvQG0VKTlJfLtdXADbYwf97EbKhkNPsu0F7mgcsWIoqsvMerNcYrd/JeNQIlujcIMg==", "post"=>{"title"=>"New Post", "description"=>"New Post Description\r\n"}, "commit"=>"Create Post", "controller"=>"posts", "action"=>"create"}):
+  app/controllers/posts_controller.rb:15:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.8ms)
+
+
+Started POST "/posts" for 24.186.246.85 at 2018-06-18 16:00:10 +0000
+Cannot render console from 24.186.246.85! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3BTXrITkkYFGOajSL0aeDvQG0VKTlJfLtdXADbYwf97EbKhkNPsu0F7mgcsWIoqsvMerNcYrd/JeNQIlujcIMg==", "post"=>{"title"=>"New Post", "description"=>"New Post Description\r\n"}, "commit"=>"Create Post"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "New Post"], ["description", "New Post Description\r\n"], ["created_at", "2018-06-18 16:00:10.733487"], ["updated_at", "2018-06-18 16:00:10.733487"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://165.227.81.218:37434/posts/2
+Completed 302 Found in 11ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/posts/2" for 24.186.246.85 at 2018-06-18 16:00:10 +0000
+Cannot render console from 24.186.246.85! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered posts/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 24ms (Views: 22.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/2" for 24.186.246.85 at 2018-06-18 16:03:30 +0000
+Cannot render console from 24.186.246.85! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered posts/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 42ms (Views: 41.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/2" for 24.186.246.85 at 2018-06-18 16:03:39 +0000
+Cannot render console from 24.186.246.85! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered posts/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/2" for 24.186.246.85 at 2018-06-18 16:03:42 +0000
+Cannot render console from 24.186.246.85! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered posts/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/2" for 24.186.246.85 at 2018-06-18 16:03:51 +0000
+Cannot render console from 24.186.246.85! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered posts/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/2" for 24.186.246.85 at 2018-06-18 16:15:49 +0000
+Cannot render console from 24.186.246.85! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+SyntaxError (/home/denisepen/refactoring-views-with-helpers-reading-v-000/app/helpers/posts_helper.rb:5: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/helpers/posts_helper.rb:5: syntax error, unexpected end-of-input, expecting keyword_end
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/posts_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (40.1ms)
+
+
+Started GET "/posts/2" for 24.186.246.85 at 2018-06-18 16:16:15 +0000
+Cannot render console from 24.186.246.85! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered posts/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 22ms (Views: 14.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/2/edit" for 24.186.246.85 at 2018-06-18 16:16:24 +0000
+Cannot render console from 24.186.246.85! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered posts/edit.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 40ms (Views: 38.5ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/posts/2" for 24.186.246.85 at 2018-06-18 16:16:30 +0000
+Cannot render console from 24.186.246.85! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Mwp6/mYoM0zSEb7RUk/ahr+m5yPoXF/1Yx2OVKq8M0MrcgU21jeMHcrOl8hrK84k92edRL3jv8yI/Ux8prtErw==", "post"=>{"title"=>"New Post Edited", "description"=>"New Post Description\r\n"}, "commit"=>"Update Post", "id"=>"2"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "posts" SET "title" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["title", "New Post Edited"], ["updated_at", "2018-06-18 16:16:30.620942"], ["id", 2]]
+  [1m[35m (2.6ms)[0m  commit transaction
+Redirected to http://165.227.81.218:37434/posts/2
+Completed 302 Found in 7ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/posts/2" for 24.186.246.85 at 2018-06-18 16:16:30 +0000
+Cannot render console from 24.186.246.85! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered posts/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/index" for 24.186.246.85 at 2018-06-18 16:16:39 +0000
+Cannot render console from 24.186.246.85! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=index):
+  app/controllers/posts_controller.rb:7:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.6ms)
+
+
+Started GET "/posts/index" for 24.186.246.85 at 2018-06-18 16:17:48 +0000
+Cannot render console from 24.186.246.85! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=index):
+  app/controllers/posts_controller.rb:7:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.7ms)
+
+
+Started GET "/authors/show" for 24.186.246.85 at 2018-06-18 16:20:09 +0000
+Cannot render console from 24.186.246.85! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AuthorsController#show as HTML
+  [1m[35mAuthor Load (0.2ms)[0m  SELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1  [["id", nil]]
+Completed 404 Not Found in 11ms (ActiveRecord: 0.6ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Author with 'id'=):
+  app/controllers/authors_controller.rb:3:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (34.2ms)
+
+
+Started GET "/authors/new" for 24.186.246.85 at 2018-06-18 16:20:30 +0000
+Cannot render console from 24.186.246.85! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/authors/new"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:31:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (50.9ms)
+
+
+Started GET "/authors/new" for 24.186.246.85 at 2018-06-18 16:30:50 +0000
+Cannot render console from 24.186.246.85! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/authors/new"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:31:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (17.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (11.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (73.7ms)
+
+
+Started GET "/authors/new" for 24.186.246.85 at 2018-06-18 16:32:32 +0000
+Cannot render console from 24.186.246.85! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/authors/new"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:31:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (44.8ms)
+
+
+Started GET "/authors/new" for 24.186.246.85 at 2018-06-18 16:33:03 +0000
+Cannot render console from 24.186.246.85! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/authors/new"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:31:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (16.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (11.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (73.7ms)
+
+
+Started GET "/authors/new" for 24.186.246.85 at 2018-06-18 16:33:06 +0000
+Cannot render console from 24.186.246.85! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/authors/new"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:31:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (42.2ms)
+
+
+Started GET "/authors/new" for 24.186.246.85 at 2018-06-18 16:33:56 +0000
+Cannot render console from 24.186.246.85! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AuthorsController#new as HTML
+  Rendered authors/new.html.erb within layouts/application (27.6ms)
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `authors_path' for #<#<Class:0x000000025f7fb0>:0x000000025b4cb0>
+Did you mean?  authors_new_path):
+    1: <%= form_for(@author) do |f| %>
+    2:   <label>Author Name:</label><br>
+    3:   <%= f.text_field :name %><br>
+    4: 
+  app/views/authors/new.html.erb:1:in `_app_views_authors_new_html_erb___4174087265221903338_19139060'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (41.7ms)
+
+
+Started GET "/posts/index" for 24.186.246.85 at 2018-06-18 16:36:31 +0000
+Cannot render console from 24.186.246.85! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 30ms (ActiveRecord: 0.7ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=index):
+  app/controllers/posts_controller.rb:7:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (37.4ms)
+
+
+Started GET "/authors/new" for 24.186.246.85 at 2018-06-18 16:36:41 +0000
+Cannot render console from 24.186.246.85! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AuthorsController#new as HTML
+  Rendered authors/new.html.erb within layouts/application (23.6ms)
+Completed 200 OK in 227ms (Views: 211.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/authors" for 24.186.246.85 at 2018-06-18 16:37:03 +0000
+Cannot render console from 24.186.246.85! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AuthorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R43xR47sVJvMxOjh044UgHVxfL/MJIH8eFj+XRRx4Otf9Y6PPvPrytQbwfjq6gAiPbAG2JmbYcWTuDx1GHaXBw==", "author"=>{"name"=>"Stephen King", "genre"=>"Horror"}, "commit"=>"Create Author"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "authors" ("name", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Stephen King"], ["genre", "Horror"], ["created_at", "2018-06-18 16:37:03.607694"], ["updated_at", "2018-06-18 16:37:03.607694"]]
+  [1m[36m (5.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://165.227.81.218:37434/authors/1
+Completed 302 Found in 9ms (ActiveRecord: 5.5ms)
+
+
+Started GET "/authors/1" for 24.186.246.85 at 2018-06-18 16:37:03 +0000
+Cannot render console from 24.186.246.85! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAuthor Load (0.2ms)[0m  SELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."author_id" = ?[0m  [["author_id", 1]]
+  Rendered authors/show.html.erb within layouts/application (19.4ms)
+Completed 200 OK in 39ms (Views: 37.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/authors/1" for 24.186.246.85 at 2018-06-18 16:42:09 +0000
+Cannot render console from 24.186.246.85! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAuthor Load (0.2ms)[0m  SELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."author_id" = ?[0m  [["author_id", 1]]
+  Rendered authors/show.html.erb within layouts/application (30.2ms)
+Completed 200 OK in 237ms (Views: 205.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/authors/1" for 24.186.246.85 at 2018-06-18 16:42:19 +0000
+Cannot render console from 24.186.246.85! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAuthor Load (0.1ms)[0m  SELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."author_id" = ?[0m  [["author_id", 1]]
+  Rendered authors/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 32ms (Views: 31.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/authors/1" for 24.186.246.85 at 2018-06-18 16:42:43 +0000
+Cannot render console from 24.186.246.85! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAuthor Load (0.1ms)[0m  SELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."author_id" = ?[0m  [["author_id", 1]]
+  Rendered authors/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 38ms (Views: 37.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/authors/1" for 24.186.246.85 at 2018-06-18 16:43:40 +0000
+Cannot render console from 24.186.246.85! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAuthor Load (0.2ms)[0m  SELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."author_id" = ?[0m  [["author_id", 1]]
+  Rendered authors/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 33ms (Views: 31.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/authors/1" for 24.186.246.85 at 2018-06-18 16:44:52 +0000
+Cannot render console from 24.186.246.85! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAuthor Load (0.7ms)[0m  SELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."author_id" = ?[0m  [["author_id", 1]]
+  Rendered authors/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 32ms (Views: 29.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts/1" for 24.186.246.85 at 2018-06-18 16:45:13 +0000
+Cannot render console from 24.186.246.85! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 31ms (Views: 22.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/1" for 24.186.246.85 at 2018-06-18 16:45:31 +0000
+Cannot render console from 24.186.246.85! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/2" for 24.186.246.85 at 2018-06-18 16:45:40 +0000
+Cannot render console from 24.186.246.85! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered posts/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.1ms)
