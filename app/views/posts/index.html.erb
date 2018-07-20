@@ -1,3 +1,5 @@
-<% @posts.each do |post| %>
-  <div><%= post.title %></div>
+<%= form_for(@post) do |f| %>
+	<div>
+	    <%= post.title %> - <%= last_updated post %>
+	</div>
 <% end %>
