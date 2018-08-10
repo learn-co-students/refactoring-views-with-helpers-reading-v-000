@@ -1,2 +1,6 @@
-<h1><%= @post.title %></h1>
+<!--line below is the title for the webpage, which will be the post title in this example.-->
+<% title @post.title %>
+
+<h1><%= @post.title %></h1> 
+<p><%= last_updated @post %></p> 
 <p><%= @post.description %></p>
