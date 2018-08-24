@@ -1,0 +1,12 @@
+<%= form_for(@post) do |f| %>
+  <% if @post.title %>
+  <label><%= last_updated @post %></label><br>
+  <% end %>
+  <label>Post title:</label><br>
+  <%= f.text_field :title %><br>
+
+  <label>Post Description</label><br>
+  <%= f.text_area :description %><br>
+
+  <%= f.submit %>
+<% end %>
