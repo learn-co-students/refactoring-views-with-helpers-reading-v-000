@@ -37,6 +37,10 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.0'
   gem 'capybara'
   gem 'database_cleaner'
+  gem 'rb-readline'
+  gem 'pry'
+  gem 'pry-coolline'
+
 end
 
 group :development do
