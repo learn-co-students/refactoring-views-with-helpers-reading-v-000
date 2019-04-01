@@ -10,7 +10,7 @@ if RUBY_VERSION>='2.6.0'
      end
    end
  else
-   puts “Monkeypatch for ActionController::TestResponse no longer needed”
+   puts 'Monkeypatch for ActionController::TestResponse no longer needed'
  end
 end
 
