@@ -12,7 +12,8 @@ class PostsController < ApplicationController
 	end
 
 	def create
-	  @post = Post.new(params)
+		# i put this(post_params) in myself
+	  @post = Post.new(post_params)
 	  @post.save
 	  redirect_to post_path(@post)
 	end
@@ -26,8 +27,4 @@ class PostsController < ApplicationController
 	def edit
 	  @post = Post.find(params[:id])
 	end
-	# i put this in myself
-	# def post_params
-	# 	params.require(:post).permit(:title, :description)
-	# end
 end
