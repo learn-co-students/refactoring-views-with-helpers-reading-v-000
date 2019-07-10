@@ -19,11 +19,26 @@ class PostsController < ApplicationController
 
 	def update
 	  @post = Post.find(params[:id])
-	  @post.update(params.require(:post))
+	  @post.update(post_params)
 	  redirect_to post_path(@post)
 	end
 
 	def edit
 	  @post = Post.find(params[:id])
 	end
+	
+	private
+	
+	def post_params
+	  # params.require(:student).permit(:name, :birthday, :hometown)
+	  params.require(:post).permit(:title, :description, :post_status, :author_id)
+	end
+	
+	 #   t.string   "title"
+   # t.text     "description"
+   # t.datetime "created_at",  null: false
+   # t.datetime "updated_at",  null: false
+   # t.boolean  "post_status"
+   # t.integer  "author_id"
+	
 end
