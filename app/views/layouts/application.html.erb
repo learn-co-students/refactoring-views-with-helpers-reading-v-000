@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!-- <title>BlogFlash</title> -->
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <title><%= display_title %></title>
+
+  <!-- <title>BlogFlash</title> -->
   <!-- <title><%#= yield :title %></title> -->
-  <title><%= content_for?(:title) ? content_for(:title) : "BlogFlash" %></title>
+  <!-- <title><%#= yield :display_title %></title> This doesn't work -->
 </head>
 <body>
 
