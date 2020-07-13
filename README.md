@@ -336,3 +336,4 @@ When we start repeating the same pieces of presentation logic across more than o
 [strftime]: http://ruby-doc.org/core-2.2.0/Time.html#method-i-strftime
 [goodstrftime]: http://www.foragoodstrftime.com/
 [layouts]: http://guides.rubyonrails.org/layouts_and_rendering.html#using-the-content-for-method
+*
