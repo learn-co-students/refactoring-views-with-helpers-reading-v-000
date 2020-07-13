@@ -24,3 +24,38 @@
   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
   [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "Testing"], ["description", "testing"], ["created_at", "2016-01-26 15:06:03.106369"], ["updated_at", "2016-01-26 15:06:03.106369"]]
   [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Started GET "/" for ::1 at 2020-03-24 08:34:57 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/MDA/.rvm/gems/ruby-2.5.1/gems/railties-5.0.7.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/MDA/.rvm/gems/ruby-2.5.1/gems/railties-5.0.7.1/lib/rails/templates/rails/welcome/index.html.erb (16.4ms)
+Completed 200 OK in 64ms (Views: 30.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2020-03-24 08:35:23 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 960ms (Views: 949.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts/1" for ::1 at 2020-03-24 08:35:29 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (2.8ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 115ms (Views: 96.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/posts/1" for ::1 at 2020-03-24 08:39:19 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 105ms (Views: 90.0ms | ActiveRecord: 1.1ms)
+
+
